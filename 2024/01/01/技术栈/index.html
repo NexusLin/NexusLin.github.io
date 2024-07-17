@@ -1,0 +1,819 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="🌂 脑图知识图谱汇总（计算机）总结自己写的技术文章和笔记，查缺补漏，完善不足之处，助力构建脑图完善知识体系。 自己平时比较喜欢写文章，所以也顺便查缺补漏自己的文章 前端技术栈01-基础（HTML｜CSS｜JavaScript）HTML 完善部分 「2024」高频前端面试题汇总之HTML篇  什么是 DOCTYPE，有何作用  对HTML语义化的理解  title与h1的区别、b与strong的区">
+<meta property="og:type" content="article">
+<meta property="og:title" content="技术栈">
+<meta property="og:url" content="https://tbai.top/2024/01/01/%E6%8A%80%E6%9C%AF%E6%A0%88/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="🌂 脑图知识图谱汇总（计算机）总结自己写的技术文章和笔记，查缺补漏，完善不足之处，助力构建脑图完善知识体系。 自己平时比较喜欢写文章，所以也顺便查缺补漏自己的文章 前端技术栈01-基础（HTML｜CSS｜JavaScript）HTML 完善部分 「2024」高频前端面试题汇总之HTML篇  什么是 DOCTYPE，有何作用  对HTML语义化的理解  title与h1的区别、b与strong的区">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-01-01T15:01:56.000Z">
+<meta property="article:modified_time" content="2024-07-17T15:46:10.010Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="技术栈">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>技术栈 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tbai.top","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>林太白</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友情链接</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://juejin.cn/user/1874034273300919" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>掘金林太白</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/NexusLin" target="_self">
+                <i class="iconfont icon-github-fill"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.csdn.net/weixin_43615570?type=blog" target="_self">
+                <i class="iconfont icon-csdn-fill"></i>
+                <span>CSDN</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="技术栈"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-01-01 23:01" pubdate>
+          January 1, 2024 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          15 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">技术栈</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="🌂-脑图知识图谱汇总（计算机）"><a href="#🌂-脑图知识图谱汇总（计算机）" class="headerlink" title="🌂 脑图知识图谱汇总（计算机）"></a>🌂 脑图知识图谱汇总（计算机）</h1><p>总结自己写的技术文章和笔记，查缺补漏，完善不足之处，助力构建脑图完善知识体系。</p>
+<p>自己平时比较喜欢写文章，所以也顺便查缺补漏自己的文章</p>
+<h2 id="前端技术栈"><a href="#前端技术栈" class="headerlink" title="前端技术栈"></a>前端技术栈</h2><h3 id="01-基础（HTML｜CSS｜JavaScript）"><a href="#01-基础（HTML｜CSS｜JavaScript）" class="headerlink" title="01-基础（HTML｜CSS｜JavaScript）"></a>01-基础（HTML｜CSS｜JavaScript）</h3><h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><p> 完善部分</p>
+<p>「2024」高频前端面试题汇总之HTML篇</p>
+<ul>
+<li><p>什么是 DOCTYPE，有何作用</p>
+</li>
+<li><p>对HTML语义化的理解</p>
+</li>
+<li><p>title与h1的区别、b与strong的区别、i与em的区别</p>
+</li>
+<li><p>页面导入样式时，使用 link 和 @import 有什么区别</p>
+</li>
+<li><p>H5有哪些新元素和新特性</p>
+</li>
+<li><p>cookie、sessionStorage 和 localStorage 的区别</p>
+</li>
+<li><p>DOM查询以及操作</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+​    待完善</p>
+</li>
+</ul>
+<p>「2024」非高频前端面试题汇总之HTML篇</p>
+<p>行级元素和块级元素分别有哪些及怎么转换</p>
+<p>如何使用HTML5中的Canvas元素</p>
+<p>cookie、sessionStorage和localStorage  的区别</p>
+<p>script、script async和script defer的区别</p>
+<p>说说对 html 语义化的理解</p>
+<p>什么是严格模式与混杂模式</p>
+<p>前端页面有哪三层构成，分别是什么    </p>
+<p> iframe的作用以及优缺点</p>
+<p>对于Web标准以及W3C的理解</p>
+<p>Quirks (怪癖)模式是什么? 它和Standards (标准)有什么区别?</p>
+<p>meta viewport是做什么用的</p>
+<p>​    </p>
+<h4 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h4><p>完善部分</p>
+<p>​    </p>
+<p>待完善</p>
+<p>​    </p>
+<h4 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h4><p>  完善部分</p>
+<p>​    </p>
+<p>​    </p>
+<p>  待完善</p>
+<h4 id="❤-前端如何保存用户的登录状态（Token）"><a href="#❤-前端如何保存用户的登录状态（Token）" class="headerlink" title="❤ 前端如何保存用户的登录状态（Token）"></a>❤ 前端如何保存用户的登录状态（<strong>Token</strong>）</h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7078487752307638308">https://juejin.cn/post/7078487752307638308</a></p>
+<h4 id="❤-TCP三次握手和四次挥手（详解）-⭐⭐⭐⭐⭐"><a href="#❤-TCP三次握手和四次挥手（详解）-⭐⭐⭐⭐⭐" class="headerlink" title="❤ TCP三次握手和四次挥手（详解）(⭐⭐⭐⭐⭐)"></a>❤ TCP三次握手和四次挥手（详解）(⭐⭐⭐⭐⭐)</h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7267093610314694671">https://juejin.cn/post/7267093610314694671</a></p>
+<h4 id="❤promise的认识-⭐⭐⭐⭐⭐"><a href="#❤promise的认识-⭐⭐⭐⭐⭐" class="headerlink" title="❤promise的认识 (⭐⭐⭐⭐⭐)"></a>❤promise的认识 (⭐⭐⭐⭐⭐)</h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7196590585237995557?searchId=20240617093725CC7B52389A5A5A09B78B">https://juejin.cn/post/7196590585237995557?searchId=20240617093725CC7B52389A5A5A09B78B</a></p>
+<h4 id="❤promise-三千字总结-⭐⭐⭐⭐⭐"><a href="#❤promise-三千字总结-⭐⭐⭐⭐⭐" class="headerlink" title="❤promise(三千字总结)(⭐⭐⭐⭐⭐)"></a>❤promise(三千字总结)(⭐⭐⭐⭐⭐)</h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7382868373882880000">https://juejin.cn/post/7382868373882880000</a></p>
+<h4 id="❤Javascript-实现继承-（⭐⭐⭐）"><a href="#❤Javascript-实现继承-（⭐⭐⭐）" class="headerlink" title="❤Javascript 实现继承 （⭐⭐⭐）"></a>❤<strong>Javascript 实现继承</strong> （⭐⭐⭐）</h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7267434484504264756">https://juejin.cn/post/7267434484504264756</a></p>
+<h3 id="02-概念认识"><a href="#02-概念认识" class="headerlink" title="02-概念认识"></a>02-概念认识</h3><h4 id="对web3-0的认识"><a href="#对web3-0的认识" class="headerlink" title="对web3.0的认识"></a><strong>对web3.0的认识</strong></h4><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7229877986870935609">https://juejin.cn/post/7229877986870935609</a> </p>
+<h3 id="03-工具使用"><a href="#03-工具使用" class="headerlink" title="03-工具使用"></a>03-工具使用</h3><h3 id="04-ES"><a href="#04-ES" class="headerlink" title="04-ES"></a>04-ES</h3><h3 id="05-VUE"><a href="#05-VUE" class="headerlink" title="05-VUE"></a>05-VUE</h3><h5 id="完善部分"><a href="#完善部分" class="headerlink" title="完善部分"></a>完善部分</h5><h5 id="❤聊聊vue2和vue3的区别-⭐⭐⭐⭐⭐"><a href="#❤聊聊vue2和vue3的区别-⭐⭐⭐⭐⭐" class="headerlink" title="❤聊聊vue2和vue3的区别(⭐⭐⭐⭐⭐)"></a>❤聊聊vue2和vue3的区别(⭐⭐⭐⭐⭐)</h5><p><a target="_blank" rel="noopener" href="https://juejin.cn/spost/7348721869086048291">https://juejin.cn/spost/7348721869086048291</a>    </p>
+<h5 id="Vue3系统搭建文章"><a href="#Vue3系统搭建文章" class="headerlink" title="Vue3系统搭建文章"></a>Vue3系统搭建文章</h5><ul>
+<li>❤ Vue3+vite系统篇一（Vue3+Pinia+Vant3&#x2F;ElementPlus+typerscript） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7346088840023146511">https://juejin.cn/post/7346088840023146511</a></li>
+<li>❤ Vue3+vite系统篇二（Vue3+vite配置） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7346238389987147811">https://juejin.cn/post/7346238389987147811</a></li>
+<li>❤ Vue3+vite系统篇三（使用axios请求Mock和Experss简单使用）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372454986478239781">https://juejin.cn/post/7372454986478239781</a></li>
+<li>❤ Vue3+vite系统篇四（axios使用封装、tailwindcss、登录实现）  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7379059228106309684">https://juejin.cn/post/7379059228106309684</a></li>
+</ul>
+<p>待完善</p>
+<p>​    </p>
+<h3 id="06-React"><a href="#06-React" class="headerlink" title="06-React"></a>06-React</h3><p>​    完善部分</p>
+<h5 id="React系统搭建文章"><a href="#React系统搭建文章" class="headerlink" title="React系统搭建文章"></a>React系统搭建文章</h5><ul>
+<li>❤React和vue写法区别使用，看完这篇你就会写React了  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377439806136303668">https://juejin.cn/post/7377439806136303668</a></li>
+<li>❤React体系01-认识和了解React特点和核心 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7361762150010748962">https://juejin.cn/post/7361762150010748962</a></li>
+<li>❤React体系02-安装和使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7361711275067408419">https://juejin.cn/post/7361711275067408419</a></li>
+<li>❤React体系03-JSX语法认识和使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362023585517256744">https://juejin.cn/post/7362023585517256744</a></li>
+<li>❤React体系04-React 组件基础（类组件） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362084371057410048">https://juejin.cn/post/7362084371057410048</a></li>
+<li>❤React体系05-React 组件通讯 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362046189011271695">https://juejin.cn/post/7362046189011271695</a></li>
+<li>❤React体系06-React 组件的新旧生命周期 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362084722820546600">https://juejin.cn/post/7362084722820546600</a></li>
+<li>❤React体系07-reder-props和高阶组件介绍 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362084371058114560">https://juejin.cn/post/7362084371058114560</a></li>
+<li>❤React体系08-函数组件useState-React Hooks初步使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7362725616569679887">https://juejin.cn/post/7362725616569679887</a></li>
+<li>❤React体系09-项目配置package.json(craco)  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7363091659104550947">https://juejin.cn/post/7363091659104550947</a></li>
+<li>❤React体系10-ref 和useRef的使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7364764922340081698">https://juejin.cn/post/7364764922340081698</a></li>
+<li>❤React体系11-React路由(ReactRouter)的初步使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7366515669351284751">https://juejin.cn/post/7366515669351284751</a></li>
+<li>❤React体系12-React路由(ReactRouter)的进阶使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7366514939542618147">https://juejin.cn/post/7366514939542618147</a></li>
+<li>❤React体系13-tailwindcss的安装和使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7366848656615243811">https://juejin.cn/post/7366848656615243811</a></li>
+<li>❤React体系14-React之中Redux状态管理的使用（react-redux）  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7367549541958385716">https://juejin.cn/post/7367549541958385716</a></li>
+<li>❤React体系15-左侧菜单栏的功能添加（借助Redux实现） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7368035468610404367">https://juejin.cn/post/7368035468610404367</a></li>
+<li>❤React体系16-axios的封装使用（以用户请求为例） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7368375416929026100">https://juejin.cn/post/7368375416929026100</a></li>
+<li>❤React体系17-antd的使用（增删改查初） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7369413136225157172">https://juejin.cn/post/7369413136225157172</a></li>
+<li>❤React体系18–对于增删改查的优化完善（高） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7370841545199484962">https://juejin.cn/post/7370841545199484962</a></li>
+<li>❤ React体系19-TypeScript认识和使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7370952994135982115">https://juejin.cn/post/7370952994135982115</a></li>
+<li>❤ React体系20-TypeScript进阶使用 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7371019286372646927">https://juejin.cn/post/7371019286372646927</a></li>
+<li>❤ React体系21-登录权限验证以及axios拦截校验 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7371753324154175488">https://juejin.cn/post/7371753324154175488</a></li>
+<li>❤ React体系22-获取用户信息并检测登陆完善 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7372454986476994597">https://juejin.cn/post/7372454986476994597</a></li>
+<li>❤ React体系23-用户注册页面和功能的实现 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7372488623945007113">https://juejin.cn/post/7372488623945007113</a></li>
+<li>❤ React体系24-字典值部分（一）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7375851690660610088">https://juejin.cn/post/7375851690660610088</a></li>
+<li>❤ React体系25-字典值部分搭建（二） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7375526202805764130">https://juejin.cn/post/7375526202805764130</a></li>
+<li>❤ React体系26-文章管理功能初 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7376073841178607651">https://juejin.cn/post/7376073841178607651</a></li>
+<li>❤ React体系27 -文章部分（二） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7376091280076668943">https://juejin.cn/post/7376091280076668943</a></li>
+<li>❤ React体系28-antd左侧菜单antd5最新版本和Router（v6）实现(2024-06最新) <a target="_blank" rel="noopener" href="https://juejin.cn/post/7376425155382132776">https://juejin.cn/post/7376425155382132776</a></li>
+<li>❤ React体系29-antd5左侧菜单最新版+Router（v6）实现(2024-06最新下) <a target="_blank" rel="noopener" href="https://juejin.cn/post/7376563996424962082">https://juejin.cn/post/7376563996424962082</a></li>
+<li>❤ React体系30-角色管理（源码已开放）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7376950812059648035">https://juejin.cn/post/7376950812059648035</a></li>
+<li>❤ React体系31-菜单管理 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377298855228669987">https://juejin.cn/post/7377298855228669987</a></li>
+<li>❤React体系优化（番外篇 一 ）  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377295478281519119">https://juejin.cn/post/7377295478281519119</a></li>
+<li>❤React体系优化（番外篇-优化写法 二 ）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7377298855229194275">https://juejin.cn/post/7377298855229194275</a></li>
+</ul>
+<p>​    待完善</p>
+<h3 id="07-Uniapp"><a href="#07-Uniapp" class="headerlink" title="07-Uniapp"></a>07-Uniapp</h3><p>完善部分</p>
+<h4 id="Uniapp搭建系列1"><a href="#Uniapp搭建系列1" class="headerlink" title="Uniapp搭建系列1"></a>Uniapp搭建系列1</h4><p><strong>uni-app1+踩坑+从零新建项目+小改造</strong></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7383609946833436687">https://juejin.cn/post/7383609946833436687</a></p>
+<p><strong>uniapp2-底部切换栏开发</strong></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7383658529792901160">https://juejin.cn/post/7383658529792901160</a></p>
+<p><strong>uniapp3-自定义底部切换栏进阶</strong></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7383955685366710306">https://juejin.cn/post/7383955685366710306</a></p>
+<p><strong>uniapp4-uniapp中使用Pinia</strong></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7384253307638939648">https://juejin.cn/post/7384253307638939648</a></p>
+<p><strong>uniapp5-uniapp接口uni.request请求封装全局拦截</strong></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7384411827135316002">https://juejin.cn/post/7384411827135316002</a></p>
+<h4 id="Uniapp搭建系列2"><a href="#Uniapp搭建系列2" class="headerlink" title="Uniapp搭建系列2"></a>Uniapp搭建系列2</h4><h5 id="❤uniapp系列1-介绍和认识、环境搭建、建立项目、存在项目运行项目"><a href="#❤uniapp系列1-介绍和认识、环境搭建、建立项目、存在项目运行项目" class="headerlink" title="❤uniapp系列1-介绍和认识、环境搭建、建立项目、存在项目运行项目"></a>❤uniapp系列1-介绍和认识、环境搭建、建立项目、存在项目运行项目</h5><p><a target="_blank" rel="noopener" href="https://juejin.cn/spost/7377561821219880960">https://juejin.cn/spost/7377561821219880960</a></p>
+<p>待完善</p>
+<h3 id="08-Node"><a href="#08-Node" class="headerlink" title="08-Node"></a>08-Node</h3><h5 id="Node搭建系列"><a href="#Node搭建系列" class="headerlink" title="Node搭建系列"></a>Node搭建系列</h5><ul>
+<li>❤ Nodejs 第一章（简单的认识安装和服务器搭建）</li>
+<li><a target="_blank" rel="noopener" href="https://juejin.cn/post/7371357451751669812">https://juejin.cn/post/7371357451751669812</a></li>
+<li>❤Nodejs 第一章（简单的认识安装和服务器搭建） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7371357451751669812">https://juejin.cn/post/7371357451751669812</a> </li>
+<li>❤Nodejs 第二章（Nodejs环境安装和依赖配置初）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7371423114381115392">https://juejin.cn/post/7371423114381115392</a></li>
+<li>❤Nodejs 第三章（Node连接本地数据库） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7371423120074309672">https://juejin.cn/post/7371423120074309672</a> </li>
+<li>❤Nodejs 第四章（操作本地数据库增改查）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7371479502457651234">https://juejin.cn/post/7371479502457651234</a> </li>
+<li>❤Nodejs 第五章（操作本地数据库实现删除）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7371680722661965859">https://juejin.cn/post/7371680722661965859</a> </li>
+<li>❤Nodejs 第六章（查询接口优化和处理） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7371731578962165794">https://juejin.cn/post/7371731578962165794</a> </li>
+<li>❤Nodejs 第七章（操作本地数据库高并发createPool方式） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7372020457125642274">https://juejin.cn/post/7372020457125642274</a> </li>
+<li>❤Nodejs 第八章（操作本地数据库优化分页）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372082380481413154">https://juejin.cn/post/7372082380481413154</a> </li>
+<li>❤Nodejs 第九章（token身份认证和express-jwt的安装认识）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372082380481724450">https://juejin.cn/post/7372082380481724450</a> </li>
+<li>❤Nodejs 第十章（用户信息token认证和登录接口开发）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372096358416252963">https://juejin.cn/post/7372096358416252963</a> </li>
+<li>❤Nodejs 第十一章（用户登录完善）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372114027839701007">https://juejin.cn/post/7372114027839701007</a> </li>
+<li>❤Nodejs 第十二章（node中间件multer的认识安装使用）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372199583886213172">https://juejin.cn/post/7372199583886213172</a></li>
+<li>❤Nodejs 第十三章（图片存储接口-本地）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372459789941948426">https://juejin.cn/post/7372459789941948426</a></li>
+<li>❤Nodejs 第十四章（文件上传接口以及token添加） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7372469324982059058">https://juejin.cn/post/7372469324982059058</a></li>
+<li>❤Nodejs 第十五章（简单websocket聊天实现）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372503361360445490">https://juejin.cn/post/7372503361360445490</a></li>
+<li>❤Nodejs 第十六章（登录接口和注册接口）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7372523264068206601">https://juejin.cn/post/7372523264068206601</a></li>
+<li>❤Nodejs 第十七章-文章增删改查接口 <a target="_blank" rel="noopener" href="https://juejin.cn/post/7373529708263014410">https://juejin.cn/post/7373529708263014410</a></li>
+<li>❤Nodejs 第十八章（字典类型表搭建和字典数据表搭建）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7373877431495032832">https://juejin.cn/post/7373877431495032832</a></li>
+<li>❤Nodejs 第十九章（字典类型和字典数据接口搭建）<a target="_blank" rel="noopener" href="https://juejin.cn/post/7374452765273899043">https://juejin.cn/post/7374452765273899043</a></li>
+<li>❤Nodejs 第二十章（字典类型和字典数据接口优化） <a target="_blank" rel="noopener" href="https://juejin.cn/post/7374970689369096232">https://juejin.cn/post/7374970689369096232</a></li>
+<li>❤Nodejs 第二十一章-角色管理增删改查接口  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377326783581618216">https://juejin.cn/post/7377326783581618216</a></li>
+<li>❤Nodejs 第二十二章-菜单管理增删改查接口  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377290806728392739">https://juejin.cn/post/7377290806728392739</a></li>
+<li>❤Node系列优化使用和代码优化（番外篇）  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7377439806136254516">https://juejin.cn/post/7377439806136254516</a></li>
+</ul>
+<h3 id="09-TypeScript"><a href="#09-TypeScript" class="headerlink" title="09-TypeScript"></a>09-TypeScript</h3><h3 id="10-其他前端相关"><a href="#10-其他前端相关" class="headerlink" title="10-其他前端相关"></a>10-其他前端相关</h3><p>Webpack&amp;&amp;vite</p>
+<p>Three.js</p>
+<p>Rust（尤大大用Rust重构vite）</p>
+<p>算法</p>
+<p>工具类</p>
+<h4 id="探索实战部分"><a href="#探索实战部分" class="headerlink" title="探索实战部分"></a>探索实战部分</h4><p>❤ 拿扣子做一个自己的AI智能机器人(龙年大吉)</p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7330556947416875023">https://juejin.cn/post/7330556947416875023</a></p>
+<h5 id="❤Three-js的安装使用"><a href="#❤Three-js的安装使用" class="headerlink" title="❤Three.js的安装使用"></a>❤Three.js的安装使用</h5><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/7379627430992642048">https://juejin.cn/post/7379627430992642048</a></p>
+<h2 id="后端技术栈"><a href="#后端技术栈" class="headerlink" title="后端技术栈"></a>后端技术栈</h2>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%8A%80%E6%9C%AF%E6%A0%88/" class="print-no-link">#技术栈</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>技术栈</div>
+      <div>https://tbai.top/2024/01/01/技术栈/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>January 1, 2024</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/02/23/00%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2/" title="About This Blog">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">About This Blog</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/01/%E9%9D%A2%E7%BB%8F-%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E7%AF%87/" title="面经-自我介绍篇">
+                        <span class="hidden-mobile">面经-自我介绍篇</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
