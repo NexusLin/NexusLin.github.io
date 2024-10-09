@@ -1,0 +1,59 @@
+import{_ as a,c as e,o as s,a4 as n}from"./chunks/framework.DvHWMJgD.js";const m=JSON.parse('{"title":"❤ React体系02-安装和使用","description":"","frontmatter":{},"headers":[],"relativePath":"src/React/02-安装和使用.md","filePath":"src/React/02-安装和使用.md"}'),p={name:"src/React/02-安装和使用.md"},t=n(`<h1 id="❤-react体系02-安装和使用" tabindex="-1">❤ React体系02-安装和使用 <a class="header-anchor" href="#❤-react体系02-安装和使用" aria-label="Permalink to &quot;❤ React体系02-安装和使用&quot;">​</a></h1><h2 id="_1、-react安装" tabindex="-1">1、 React安装 <a class="header-anchor" href="#_1、-react安装" aria-label="Permalink to &quot;1、 React安装&quot;">​</a></h2><h3 id="_1-下载" tabindex="-1">（1）下载 <a class="header-anchor" href="#_1-下载" aria-label="Permalink to &quot;（1）下载&quot;">​</a></h3><p>npm i react react-dom</p><p>介绍： React 包是核心，提供创建元素 React-dom包提供React-dom相关功能</p><p>引入React核心代码必须要在React-dom之前</p><h3 id="_2-使用" tabindex="-1">（2） 使用 <a class="header-anchor" href="#_2-使用" aria-label="Permalink to &quot;（2） 使用&quot;">​</a></h3><p>（版本是16.8和React18两个版本） <img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338381848-70255908-e7a2-4090-9442-ba4c611a0fd3.webp" alt=""></p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>javascript</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码&lt;!DOCTYPE html&gt;</span></span>
+<span class="line"><span>&lt;html lang=&quot;en&quot;&gt;</span></span>
+<span class="line"><span>&lt;head&gt;</span></span>
+<span class="line"><span>  &lt;meta charset=&quot;UTF-8&quot;&gt;</span></span>
+<span class="line"><span>  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span></span>
+<span class="line"><span>  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></span>
+<span class="line"><span>  &lt;title&gt;Document&lt;/title&gt;</span></span>
+<span class="line"><span>&lt;/head&gt;</span></span>
+<span class="line"><span>&lt;body&gt;</span></span>
+<span class="line"><span>  &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span>  &lt;!-- 引入元素 --&gt;</span></span>
+<span class="line"><span>  &lt;script src=&quot;./lib/react.js&quot;&gt;&lt;/script&gt;</span></span>
+<span class="line"><span>  &lt;script src=&quot;./lib/react_dom.js&quot;&gt;&lt;/script&gt;</span></span>
+<span class="line"><span>  &lt;script src=&quot;./lib/babel.js&quot;&gt;&lt;/script&gt;</span></span>
+<span class="line"><span>  &lt;script type=&quot;text/babel&quot;&gt;</span></span>
+<span class="line"><span>// 1.定义变量-创建元素</span></span>
+<span class="line"><span>    const message = &quot;Hello World&quot;</span></span>
+<span class="line"><span>    const tit=React.createElement(&#39;h1&#39;,null,&#39;hrllo React!&#39;);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 3.渲染内容 ReactDOM.render(tit,document.getElementById(&#39;root&#39;));</span></span>
+<span class="line"><span>  &lt;/script&gt;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&lt;/body&gt;</span></span>
+<span class="line"><span>&lt;/html&gt;</span></span></code></pre></div><p><strong>本质上babel进行的转化</strong><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338381826-95968398-c82d-46ea-8751-c36ada0d4c5a.webp" alt=""></p><h3 id="_3-方法介绍" tabindex="-1">（3）方法介绍 <a class="header-anchor" href="#_3-方法介绍" aria-label="Permalink to &quot;（3）方法介绍&quot;">​</a></h3><h4 id="react-createelement-方法" tabindex="-1">React.createElement() 方法 <a class="header-anchor" href="#react-createelement-方法" aria-label="Permalink to &quot;React.createElement() 方法&quot;">​</a></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338381923-0223d22d-a254-4f79-bfde-907c04f45c1c.webp" alt=""></p><p><code>React.createElement(A,B,C)</code> A,B,C代表元素的参数，属性、子节点</p><h4 id="react渲染" tabindex="-1">React渲染 <a class="header-anchor" href="#react渲染" aria-label="Permalink to &quot;React渲染&quot;">​</a></h4><p>React18之前 ReactDOM.render() 渲染方法</p><p>React18之后 ReactDOM.createRoot</p><p>两者之间的使用方法如下:</p><p>ReactDOM.render(element, container[, callback])</p><p>ReactDOM.createPortal(child, container)</p><p>区别就在于Dom渲染的优劣上面：</p><p><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338382025-280f473d-34ee-487e-974a-35f45144f3f5.webp" alt=""></p><p>先了解一下虚拟Dom ：</p><p><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338381957-c3961fce-a405-436e-826a-5f49ddee8319.webp" alt=""></p><p>两者之间都是在提供的 container 里渲染 React 元素，d都是包含两个参数：</p><p>第一个参数<code>child</code>或<code>element</code>是任何可渲染的<code>React</code>元素。</p><p>第二个参数<code>container</code>是一个 真实的<code>DOM</code>元素。</p><p>主要的区别在于：<br> （1）ReactDOM.render在首次调用时，会将容器节点里的所有DOM元素都替换，ReactDOM.createPortal是向container下插入一个子节点；<br> （2）[ReactDOM.render]会直接渲染成DOM元素，而[ReactDOM.createPortal]则是渲染出React元素，最终还是需要通过ReactDOM.render渲染成真实DOM；</p><h3 id="_4-react脚手架创建项目" tabindex="-1">（4）React脚手架创建项目： <a class="header-anchor" href="#_4-react脚手架创建项目" aria-label="Permalink to &quot;（4）React脚手架创建项目：&quot;">​</a></h3><p>快速搭建react项目</p><h4 id="_4-1-安装-create-react-app-脚手架" tabindex="-1">4-1 安装 create-react-app 脚手架 <a class="header-anchor" href="#_4-1-安装-create-react-app-脚手架" aria-label="Permalink to &quot;4-1 安装 create-react-app 脚手架&quot;">​</a></h4><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>javascript</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码npm install -g create-react-app       // Windows</span></span>
+<span class="line"><span>sudo npm install -g create-react-app  // Linux</span></span></code></pre></div><p><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338382249-3ebbe41b-c107-4310-8397-1d75e807e7e5.webp" alt=""></p><h4 id="_4-2-检测-create-react-app-是否安装成功" tabindex="-1">4-2 检测 create-react-app 是否安装成功 <a class="header-anchor" href="#_4-2-检测-create-react-app-是否安装成功" aria-label="Permalink to &quot;4-2 检测 create-react-app 是否安装成功&quot;">​</a></h4><p><img src="https://cdn.nlark.com/yuque/0/2024/webp/22435914/1727338382236-237b4c86-efe1-4f50-abb3-6d43867c2485.webp" alt=""></p><p><code>【提示】至少需要Node14以上的环境</code></p><h2 id="_2、react创建项目" tabindex="-1">2、React创建项目 <a class="header-anchor" href="#_2、react创建项目" aria-label="Permalink to &quot;2、React创建项目&quot;">​</a></h2><p><strong>本地环境介绍</strong></p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>bash</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码node v20.11.0</span></span>
+<span class="line"><span>react 18.2</span></span>
+<span class="line"><span>react-dom  18.2.0</span></span></code></pre></div><h3 id="组合一-cra官方搭建ts版本-目前本系列采用该方式" tabindex="-1">组合一（CRA官方搭建TS版本 --目前本系列采用该方式） <a class="header-anchor" href="#组合一-cra官方搭建ts版本-目前本系列采用该方式" aria-label="Permalink to &quot;组合一（CRA官方搭建TS版本 --目前本系列采用该方式）&quot;">​</a></h3><p>本地创建react 项目(yarn+CRA+TS)</p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>js</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码npx create-react-app xx --template typescript（单次创建ts+react项目 推荐 ）</span></span>
+<span class="line"><span>cd xx</span></span>
+<span class="line"><span>yarn </span></span>
+<span class="line"><span>yarn start</span></span>
+<span class="line"><span>启动成功，在浏览器 输入 http://localhost:3000/ 即可访问react</span></span></code></pre></div><h3 id="组合二-cra官方搭建js版本" tabindex="-1">组合二（CRA官方搭建JS版本） <a class="header-anchor" href="#组合二-cra官方搭建js版本" aria-label="Permalink to &quot;组合二（CRA官方搭建JS版本）&quot;">​</a></h3><p>（1）（2）任意选择一种即可</p><h4 id="_1-不全局安装create-react-app-情况下" tabindex="-1">（1）不全局安装create-react-app 情况下 <a class="header-anchor" href="#_1-不全局安装create-react-app-情况下" aria-label="Permalink to &quot;（1）不全局安装create-react-app 情况下&quot;">​</a></h4><p>单次创建</p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>javascript</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码npx create-react-app spereact// 注意：名字不能包含大写字母。我的是 my-app。</span></span>
+<span class="line"><span>cd spereact</span></span>
+<span class="line"><span>npm start</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>npx create-react-app 项目名称 --template typescript（单次创建ts+react项目 推荐 ）</span></span></code></pre></div><h4 id="_2-全局安装create-react-app-情况下" tabindex="-1">（2）全局安装create-react-app 情况下 <a class="header-anchor" href="#_2-全局安装create-react-app-情况下" aria-label="Permalink to &quot;（2）全局安装create-react-app 情况下&quot;">​</a></h4><hr><p><code>采取方式</code></p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>javascript</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码npm install -g create-react-app //全局安装create-react-app</span></span>
+<span class="line"><span>create-react-app 项目名称  （js版本）</span></span>
+<span class="line"><span>create-react-app 项目名称  --template typescript （TS版本）</span></span></code></pre></div><hr><h3 id="组合三-npm或者yarn创建配合cra" tabindex="-1">组合三（npm或者yarn创建配合CRA） <a class="header-anchor" href="#组合三-npm或者yarn创建配合cra" aria-label="Permalink to &quot;组合三（npm或者yarn创建配合CRA）&quot;">​</a></h3><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>javascript</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> 代码解读</span></span>
+<span class="line"><span>复制代码npm init react-app 项目名称(不推荐)</span></span>
+<span class="line"><span>yarn create react-app 项目名称(不推荐)</span></span></code></pre></div><p>npx命令的介绍 说明：npx 是 npm 5.2+ 附带的 package 运行工具。</p><p>作用： 提升包内提供的命令行工具的使用体验 原来： 先安装脚手架，再使用包提供的命令</p><p>默认，create react app 创建的项目是看不到 webpack 相关的配置的，如果想要配置 webpack，只能先 eject 一下，执行命令来释放 webpack 的配置文件： npm run eject</p><h2 id="_3、react调试工具" tabindex="-1">3、React调试工具 <a class="header-anchor" href="#_3、react调试工具" aria-label="Permalink to &quot;3、React调试工具&quot;">​</a></h2><h3 id="谷歌浏览器插件react-developer-tools" tabindex="-1">谷歌浏览器插件React Developer Tools <a class="header-anchor" href="#谷歌浏览器插件react-developer-tools" aria-label="Permalink to &quot;谷歌浏览器插件React Developer Tools&quot;">​</a></h3><p>作者：林太白<br> 链接：<a href="https://juejin.cn/post/7361711275067408419" target="_blank" rel="noreferrer">https://juejin.cn/post/7361711275067408419</a><br> 来源：稀土掘金<br> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>`,60),c=[t];function l(r,i,o,d,h,u){return s(),e("div",null,c)}const g=a(p,[["render",l]]);export{m as __pageData,g as default};
