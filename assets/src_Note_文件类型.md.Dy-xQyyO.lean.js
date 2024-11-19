@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as l,a4 as i}from"./chunks/framework.DvHWMJgD.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/Note/文件类型.md","filePath":"src/Note/文件类型.md"}'),t={name:"src/Note/文件类型.md"},o=i("",21),r=[o];function s(p,_,c,n,u,d){return l(),e("div",null,r)}const f=a(t,[["render",s]]);export{m as __pageData,f as default};
