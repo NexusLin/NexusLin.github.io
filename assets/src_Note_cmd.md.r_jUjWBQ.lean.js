@@ -1,0 +1,1 @@
+import{_ as i,c as a,ag as n,o as h}from"./chunks/framework.wRLzwZz-.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/Note/cmd.md","filePath":"src/Note/cmd.md"}'),l={name:"src/Note/cmd.md"};function p(k,s,t,E,e,d){return h(),a("div",null,s[0]||(s[0]=[n("",30)]))}const y=i(l,[["render",p]]);export{r as __pageData,y as default};

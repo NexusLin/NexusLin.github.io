@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s}from"./chunks/framework.DvHWMJgD.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/Vue/tailwindcss.md","filePath":"src/Vue/tailwindcss.md"}'),a={name:"src/Vue/tailwindcss.md"};function c(r,n,i,o,d,l){return s(),t("div")}const m=e(a,[["render",c]]);export{_ as __pageData,m as default};
