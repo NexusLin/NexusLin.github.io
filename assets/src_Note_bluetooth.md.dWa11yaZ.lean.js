@@ -1,1 +1,0 @@
-import{_ as t,c as e,o}from"./chunks/framework.wRLzwZz-.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"src/Note/bluetooth.md","filePath":"src/Note/bluetooth.md"}'),r={name:"src/Note/bluetooth.md"};function a(s,c,n,l,p,d){return o(),e("div")}const m=t(r,[["render",a]]);export{_ as __pageData,m as default};

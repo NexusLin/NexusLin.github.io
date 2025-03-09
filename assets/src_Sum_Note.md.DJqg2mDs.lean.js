@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.wRLzwZz-.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/Sum/Note.md","filePath":"src/Sum/Note.md"}'),r={name:"src/Sum/Note.md"};function a(s,c,n,m,p,_){return o(),t("div")}const f=e(r,[["render",a]]);export{i as __pageData,f as default};

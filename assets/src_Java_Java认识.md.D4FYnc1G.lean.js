@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as t}from"./chunks/framework.wRLzwZz-.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/Java/Java认识.md","filePath":"src/Java/Java认识.md"}'),r={name:"src/Java/Java认识.md"};function s(c,o,n,_,p,d){return t(),e("div")}const v=a(r,[["render",s]]);export{m as __pageData,v as default};
