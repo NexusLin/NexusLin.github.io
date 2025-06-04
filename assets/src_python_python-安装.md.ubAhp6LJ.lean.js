@@ -1,0 +1,1 @@
+import{_ as t,c as e,o}from"./chunks/framework.Bft4-MjQ.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/python/python-安装.md","filePath":"src/python/python-安装.md"}'),n={name:"src/python/python-安装.md"};function r(a,s,c,p,_,h){return o(),e("div")}const m=t(n,[["render",r]]);export{i as __pageData,m as default};

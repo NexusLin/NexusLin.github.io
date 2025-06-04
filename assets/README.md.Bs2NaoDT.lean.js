@@ -1,1 +1,0 @@
-import{_ as e,c as s,ag as i,o as t}from"./chunks/framework.wRLzwZz-.js";const u=JSON.parse('{"title":"Nexus","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),n={name:"README.md"};function p(r,a,o,l,h,d){return t(),s("div",null,a[0]||(a[0]=[i("",20)]))}const k=e(n,[["render",p]]);export{u as __pageData,k as default};
