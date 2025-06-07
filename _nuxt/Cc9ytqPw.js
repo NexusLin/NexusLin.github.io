@@ -1,1 +1,0 @@
-import r from"./BzBQmTJO.js";import{j as a,c as s,b as l,a as e,F as n,o as u}from"./CEWP0eR-.js";import"./CuJxy7rg.js";const d={__name:"activity",setup(c){const o=a();return console.log(o.query,"route.query"),(m,t)=>(u(),s(n,null,[l(r),t[0]||(t[0]=e("div",null,[e("h1",null,"活动"),e("p",null,"这里是活动页面的内容。")],-1))],64))}};export{d as default};
