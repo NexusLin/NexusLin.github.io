@@ -1,0 +1,1 @@
+import t from"./BzBQmTJO.js";import{c as o,b as a,a as r,o as n}from"./CEWP0eR-.js";import"./CuJxy7rg.js";const i={__name:"news",setup(s){return(l,e)=>(n(),o("div",null,[a(t),e[0]||(e[0]=r("h1",null,"动态",-1)),e[1]||(e[1]=r("p",null,"这里是动态页面的内容。",-1))]))}};export{i as default};
