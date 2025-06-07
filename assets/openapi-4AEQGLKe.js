@@ -1,0 +1,1 @@
+import{s as t}from"./index-B_mAkUH5.js";const a="/open";function s(e){return t({url:a+"/dictDataAll",method:"get",params:e})}function l(){return t({url:a+"/sysData",method:"get"})}export{l as g,s as l};

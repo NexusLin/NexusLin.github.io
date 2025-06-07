@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.Bft4-MjQ.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/note/操作文件.md","filePath":"src/note/操作文件.md"}'),a={name:"src/note/操作文件.md"};function o(s,c,n,_,p,d){return r(),t("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{s as a}from"./index-B_mAkUH5.js";const e="/system/dictData";function u(t){return a({url:e,method:"get",params:t})}function n(t){return a({url:e,method:"post",data:t})}function i(t){return a({url:e+"/"+t,method:"delete"})}function o(t){return a({url:e,method:"put",data:t})}function d(t){return a({url:e+"/"+t,method:"get"})}export{n as a,i as d,d as g,u as l,o as u};

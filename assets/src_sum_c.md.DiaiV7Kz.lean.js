@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as c}from"./chunks/framework.Bft4-MjQ.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"src/sum/c.md","filePath":"src/sum/c.md"}'),s={name:"src/sum/c.md"};function r(a,o,n,m,p,d){return c(),t("div")}const f=e(s,[["render",r]]);export{_ as __pageData,f as default};
