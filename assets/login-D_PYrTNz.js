@@ -1,1 +1,0 @@
-import{s as t}from"./index-B_mAkUH5.js";function o(e){return t({url:"/login",headers:{isToken:!1,repeatSubmit:!1},method:"post",data:e})}function s(e){return t({url:"/register",headers:{isToken:!1},method:"post",data:e})}function n(){return t({url:"/getInfo",method:"get"})}export{n as g,o as l,s as r};
