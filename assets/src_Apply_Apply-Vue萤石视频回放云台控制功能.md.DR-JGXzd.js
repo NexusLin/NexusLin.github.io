@@ -1,0 +1,42 @@
+import{_ as s,c as n,ag as p,o as e}from"./chunks/framework.Bft4-MjQ.js";const u=JSON.parse('{"title":"❤ Vue海康萤石视频回放和云台控制功能","description":"","frontmatter":{},"headers":[],"relativePath":"src/Apply/Apply-Vue萤石视频回放云台控制功能.md","filePath":"src/Apply/Apply-Vue萤石视频回放云台控制功能.md"}'),i={name:"src/Apply/Apply-Vue萤石视频回放云台控制功能.md"};function t(l,a,o,c,r,h){return e(),n("div",null,a[0]||(a[0]=[p(`<h1 id="❤-vue海康萤石视频回放和云台控制功能" tabindex="-1">❤ Vue海康萤石视频回放和云台控制功能 <a class="header-anchor" href="#❤-vue海康萤石视频回放和云台控制功能" aria-label="Permalink to &quot;❤ Vue海康萤石视频回放和云台控制功能&quot;">​</a></h1><p>前端Vue使用海康萤石直播、回放、云台控制功能</p><h2 id="_1、官网文档-【萤石开放文档】" tabindex="-1">1、官网文档：【萤石开放文档】 <a class="header-anchor" href="#_1、官网文档-【萤石开放文档】" aria-label="Permalink to &quot;1、官网文档：【萤石开放文档】&quot;">​</a></h2><p>UIKit Javascript · 萤石开放平台API文档 (ys7.com)</p><blockquote><p>☞ 最新代码和demo</p></blockquote><p><a href="https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2FEzviz-OpenBiz%2FEZUIKit-JavaScript-npm" target="_blank" rel="noreferrer">github.com/Ezviz-OpenB…</a></p><blockquote><p>☞ 云台控制功能</p></blockquote><p>云台 · 萤石开放平台API文档 (ys7.com)</p><p>！问题1 老版本监控回放二合一模块 引入后无法隐藏DOM节点 需手动删除</p><p>！问题2 老版本监控回放二合一模块和新版本模块无法共用 不可以引入两个库 否则会造成模块切换后报错</p><p>———————————————————————————</p><h3 id="_2、简单使用" tabindex="-1">2、简单使用 <a class="header-anchor" href="#_2、简单使用" aria-label="Permalink to &quot;2、简单使用&quot;">​</a></h3><p>使用：【轻应用(H5/web)=&gt;UIKit Javascript 】</p><p>官网文档地址： <a href="https://link.juejin.cn?target=http%3A%2F%2Fopen.ys7.com%2Fdoc%2Fzh%2Fuikit%2Fuikit_javascript.html%25E3%2580%2591%253E" target="_blank" rel="noreferrer">open.ys7.com/doc/zh/uiki…</a></p><p>npm 官网相关文档介绍： <a href="https://link.juejin.cn?target=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fezuikit-js" target="_blank" rel="noreferrer">www.npmjs.com/package/ezu…</a></p><blockquote><p>☞ 安装依赖</p></blockquote><div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">npm install ezuikit</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">js</span></span></code></pre></div><blockquote><p>☞ main.js内引入</p></blockquote><div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> EZUIKit </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;ezuikit-js&#39;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">;</span></span></code></pre></div><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>&lt;template&gt;</span></span>
+<span class="line"><span>  &lt;div&gt;</span></span>
+<span class="line"><span>      &lt;div id=&quot;videoPlayr&quot;&gt;&lt;/div&gt;</span></span>
+<span class="line"><span>  &lt;/div&gt;</span></span>
+<span class="line"><span>&lt;/template&gt;</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span>&lt;script&gt;</span></span>
+<span class="line"><span> </span></span>
+<span class="line"><span>import EZUIKit from &quot;ezuikit-js&quot;;</span></span>
+<span class="line"><span>var player = null;</span></span>
+<span class="line"><span>export default {</span></span>
+<span class="line"><span>  data(){</span></span>
+<span class="line"><span>    return{</span></span>
+<span class="line"><span>        videoInfo:{</span></span>
+<span class="line"><span>            deviceurl:&#39;&#39;,</span></span>
+<span class="line"><span>            accessToken:&#39;&#39;,</span></span>
+<span class="line"><span>            deviceCode:&#39;&#39;,</span></span>
+<span class="line"><span>            deviceSerial:&#39;&#39;,</span></span>
+<span class="line"><span>          },</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  methods: {</span></span>
+<span class="line"><span>    videoPlayer() {</span></span>
+<span class="line"><span>      player = new EZUIKit.EZUIKitPlayer({</span></span>
+<span class="line"><span>        autoplay: true,</span></span>
+<span class="line"><span>        id: &quot;videoPlayr&quot;,   // 播放控件的ID</span></span>
+<span class="line"><span>        accessToken: this.videoInfo.accessToken,   // 后端给的Token</span></span>
+<span class="line"><span>        url: this.videoInfo.deviceurl,         // 后端给的URL</span></span>
+<span class="line"><span>        template: &quot;security&quot;, // simple - 极简版;standard-标准版;security - 安防版(预览回放);voice-语音版；</span></span>
+<span class="line"><span>        width: 1100,</span></span>
+<span class="line"><span>        height: 563,</span></span>
+<span class="line"><span>      });</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>};</span></span>
+<span class="line"><span>&lt;/script&gt;</span></span></code></pre></div><h2 id="_3、进阶方法调用" tabindex="-1">3、进阶方法调用 <a class="header-anchor" href="#_3、进阶方法调用" aria-label="Permalink to &quot;3、进阶方法调用&quot;">​</a></h2><p>（1）停止播放</p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>play.stop()</span></span></code></pre></div><h2 id="_4、问题以及解决方法" tabindex="-1">4、问题以及解决方法： <a class="header-anchor" href="#_4、问题以及解决方法" aria-label="Permalink to &quot;4、问题以及解决方法：&quot;">​</a></h2><h4 id="a切换到b设备播放时-a依旧在播放" tabindex="-1">- A切换到B设备播放时，A依旧在播放 <a class="header-anchor" href="#a切换到b设备播放时-a依旧在播放" aria-label="Permalink to &quot;- A切换到B设备播放时，A依旧在播放&quot;">​</a></h4><p><code>player.stop()</code></p><h4 id="在播放时-切换到其他模块-页面-也会造成关闭当前模块-页面后依旧在播放的问题" tabindex="-1">- 在播放时,切换到其他模块/页面 也会造成关闭当前模块/页面后依旧在播放的问题 <a class="header-anchor" href="#在播放时-切换到其他模块-页面-也会造成关闭当前模块-页面后依旧在播放的问题" aria-label="Permalink to &quot;- 在播放时,切换到其他模块/页面 也会造成关闭当前模块/页面后依旧在播放的问题&quot;">​</a></h4><blockquote><p>☞ 解决方法</p></blockquote><p>在销毁时调用停止播放方法 （必须加）</p><h4 id="视频销毁【调用萤石云ezuikit-js的视频对象销毁】" tabindex="-1">- 视频销毁【调用萤石云ezuikit-js的视频对象销毁】 <a class="header-anchor" href="#视频销毁【调用萤石云ezuikit-js的视频对象销毁】" aria-label="Permalink to &quot;- 视频销毁【调用萤石云ezuikit-js的视频对象销毁】&quot;">​</a></h4><h5 id="_1-调用html原生" tabindex="-1">① 调用html原生 <a class="header-anchor" href="#_1-调用html原生" aria-label="Permalink to &quot;① 调用html原生&quot;">​</a></h5><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>document.getElementById(&#39;video-container1&#39;).innerHTML= &quot;&quot;;</span></span></code></pre></div><p>没起效果，元素虽然内容去掉，但是视频声音依然在</p><h5 id="_2-原生js-remove" tabindex="-1">② 原生js remove() <a class="header-anchor" href="#_2-原生js-remove" aria-label="Permalink to &quot;② 原生js remove()&quot;">​</a></h5><p>（经检测十分的好用）</p><div class="language-plain vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">plain</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>if (_this[\`\${&#39;player&#39;+i}\`]) {</span></span>
+<span class="line"><span>  var stopPromise = _this[\`\${&#39;player&#39;+i}\`].stop();</span></span>
+<span class="line"><span>  stopPromise.then((data) =&gt; {</span></span>
+<span class="line"><span>    _this[\`\${&#39;player&#39;+i}\`] = null;</span></span>
+<span class="line"><span>    let mdaid = &quot;#videoPlayr&quot; + i+&#39;-wrap&#39;;</span></span>
+<span class="line"><span>    document.querySelector(mdaid).remove();</span></span>
+<span class="line"><span>  });</span></span>
+<span class="line"><span>}</span></span></code></pre></div><blockquote><p>友情提示：</p></blockquote><p><code>萤石视频存在问题不少，建议第一次使用的用户还是去使用阿里云带的！</code></p>`,38)]))}const k=s(i,[["render",t]]);export{u as __pageData,k as default};

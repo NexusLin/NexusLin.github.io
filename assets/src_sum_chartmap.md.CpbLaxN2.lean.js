@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e}from"./chunks/framework.Bft4-MjQ.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/sum/chartmap.md","filePath":"src/sum/chartmap.md"}'),r={name:"src/sum/chartmap.md"};function c(s,o,m,n,p,_){return e(),a("div")}const f=t(r,[["render",c]]);export{i as __pageData,f as default};
