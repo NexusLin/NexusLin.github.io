@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as s}from"./chunks/framework.Bft4-MjQ.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/sum/typescript.md","filePath":"src/sum/typescript.md"}'),r={name:"src/sum/typescript.md"};function c(a,p,o,n,i,m){return s(),e("div")}const f=t(r,[["render",c]]);export{d as __pageData,f as default};
