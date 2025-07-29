@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.CqxIsSM8.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/note/操作文件.md","filePath":"src/note/操作文件.md","lastUpdated":1743124685000}'),r={name:"src/note/操作文件.md"};function o(s,c,n,_,d,p){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
