@@ -1,0 +1,114 @@
+/* Header.css */
+.my-header-shadow {
+  box-shadow: 0 0px 10px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+.my-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 玻璃拟态效果 */
+.my-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1); /* 背景颜色透明 */
+  backdrop-filter: blur(10px); /* 背景模糊效果 */
+  -webkit-backdrop-filter: blur(10px); /* 兼容Safari */
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+/* Logo 样式 */
+.my-logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #333;
+  display: flex;
+  padding: 10px;
+}
+
+/* 导航栏 */
+.my-nav {
+  display: flex;
+  gap: 20px;
+}
+/* 导航项 */
+.my-nav-item {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  transition: all  0.3s ease;
+  padding:0;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.my-logo-text{
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.my-logo-img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* 二级菜单样式 */
+.my-submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.66);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 10;
+  padding: 20px;
+}
+
+
+
+/* 二级菜单项 */
+.my-submenu-item {
+  cursor: pointer;
+  padding: 0px;
+  line-height: 30px;
+  border-radius: 6px;
+  padding: 0 10px;
+  transition: all 0.5s ease;
+  transition: opacity 0.1s ease, visibility 5s ease;
+}
+.my-nav-item:hover .my-submenu {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  /* transition: all 0.2s ease; */
+  /* 展开效果 */
+ -webkit-animation: out-ver-top-show 0.1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+	animation: out-ver-top-show 0.1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+}
+.my-nav-item:not(:hover) .my-submenu {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  /* transition: all 0.2s ease; */
+  /* 收起效果 */
+  -webkit-animation: out-ver-top-fold 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: out-ver-top-fold 0.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
