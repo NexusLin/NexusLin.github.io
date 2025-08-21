@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as s,o}from"./i5AoV_GB.js";const r={__name:"index",setup(c){return(n,e)=>(o(),a("div",null,e[0]||(e[0]=[s("div",{class:"directory"},[s("h2",null,"心育目录")],-1)])))}},d=t(r,[["__scopeId","data-v-cdee3ef7"]]);export{d as default};
