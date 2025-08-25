@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.CqxIsSM8.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/sum/react.md","filePath":"src/sum/react.md","lastUpdated":1751449629000}'),r={name:"src/sum/react.md"};function s(c,o,n,d,m,p){return a(),t("div")}const f=e(r,[["render",s]]);export{i as __pageData,f as default};

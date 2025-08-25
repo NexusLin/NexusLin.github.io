@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as c}from"./chunks/framework.Bft4-MjQ.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"src/c/c环境搭建.md","filePath":"src/c/c环境搭建.md"}'),r={name:"src/c/c环境搭建.md"};function a(s,o,n,_,p,d){return c(),t("div")}const f=e(r,[["render",a]]);export{m as __pageData,f as default};

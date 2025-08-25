@@ -1,1 +1,0 @@
-import{c as a,a as t,o as l}from"./i5AoV_GB.js";const s={__name:"activity",setup(n){return(o,e)=>(l(),a("div",null,e[0]||(e[0]=[t("h1",null,"活动",-1),t("p",null,"这里是活动页面的内容。",-1)])))}};export{s as default};

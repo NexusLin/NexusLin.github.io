@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.Bft4-MjQ.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/echarts/index.md","filePath":"src/echarts/index.md"}'),a={name:"src/echarts/index.md"};function s(c,n,o,d,i,p){return r(),t("div")}const f=e(a,[["render",s]]);export{m as __pageData,f as default};
